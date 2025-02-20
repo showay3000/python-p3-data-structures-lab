@@ -55,6 +55,26 @@ class TestDataStructures:
             "heat_level": 3,
         })
 
+    # def test_sort_by_heat(self):
+    #     '''contains function sort_by_heat that returns a list sorted by heat_level.'''
+    #     assert(sort_by_heat(TestDataStructures.SPICY_FOODS) == [
+    #         {
+    #             "name": "Buffalo Wings",
+    #             "cuisine": "American",
+    #             "heat_level": 3,
+    #         },
+    #         {
+    #             "name": "Mapo Tofu",
+    #             "cuisine": "Sichuan",
+    #             "heat_level": 6,
+    #         },
+    #         {
+    #             "name": "Green Curry",
+    #             "cuisine": "Thai",
+    #             "heat_level": 9,
+    #         },
+    #     ])
+
     def test_print_spiciest_foods(self):
         '''contains function print_spiciest_foods that returns foods with heat_level over 5 formatted with 🌶  emojis.'''
         captured_out = io.StringIO()
@@ -67,7 +87,7 @@ class TestDataStructures:
     def test_get_average_heat_level(self):
         '''contains function get_average_heat_level that returns average of heat_levels in spicy_foods.'''
         assert(get_average_heat_level(TestDataStructures.SPICY_FOODS) == 6)
-
+        
     def test_create_spicy_food(self):
         '''contains function create_spicy_food that returns original list of spicy_foods with new spicy_food added.'''
         new_spicy_foods = create_spicy_food(
@@ -101,4 +121,3 @@ class TestDataStructures:
                 "heat_level": 10,
             },
         ]
-
